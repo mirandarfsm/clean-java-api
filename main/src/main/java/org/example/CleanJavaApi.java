@@ -1,11 +1,11 @@
 package org.example;
 
-import static spark.Spark.get;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import org.example.rest.spark.AccountSpark;
-
+@SpringBootApplication
 public class CleanJavaApi {
     public static void main(String[] args) {
-        AccountSpark.startAccount();
+		SpringApplication.run(CleanJavaApi.class, args);
     }
 }
